@@ -13,8 +13,9 @@ library(igraph)
 library(bnlearn)
 
 # Directorio de trabajo
-setwd("C:/Users/sergr/Dropbox/TFM_Sergio_Gracia")
+#setwd("C:/Users/sergr/Dropbox/TFM_Sergio_Gracia")
 #setwd("/home/juaco/Dropbox/TFM_Sergio_Gracia")
+setwd("~/Dropbox/TFM_Sergio_Gracia")
 
 # Cargamos los datos ya calculados, para evitar problemas de memoria
 load("./Rdata/ba5degAnom.Rdata", verbose = TRUE)
@@ -22,7 +23,7 @@ load("./Rdata/ba_5deg.Rdata", verbose = TRUE)
 load("./Rdata/mask.Rdata", verbose = TRUE)
 
 # Seleccionar grid a estudiar
-anom = TRUE
+anom = FALSE
 
 if(anom == FALSE){
   base_dir <- "./BN_phases_raw"

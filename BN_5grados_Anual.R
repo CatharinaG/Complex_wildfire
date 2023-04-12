@@ -22,8 +22,9 @@ library(sp)
 library(gridExtra)
 
 # Directorio de trabajo
-setwd("C:/Users/sergr/Dropbox/TFM_Sergio_Gracia")
+# setwd("C:/Users/sergr/Dropbox/TFM_Sergio_Gracia")
 #setwd("/home/juaco/Dropbox/TFM_Sergio_Gracia")
+setwd("~/Dropbox/TFM_Sergio_Gracia")
 
 # Cargar funciones definidas por mi
 sapply(list.files("./scripts/MastersThesis/functions/", full.names = TRUE), "source", .GlobalEnv)
@@ -58,6 +59,7 @@ load("./Rdata/BNobj_anom_standarize.Rdata", verbose = TRUE)
 
 graph_world_BN(BNobj)
 graph_world_BN(BNobj_anom)
+graph_world_BN(BNobj_anom, mute = TRUE)
 
 ############################################################
 # Function propagation of evidence
